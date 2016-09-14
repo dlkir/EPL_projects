@@ -1,0 +1,3 @@
+Binary file Algae.o matches
+Makefile:#CXXSRCS = LifeForm.cpp animals.cpp Window.cpp Event.cpp Algae.cpp \
+Binary file animals matches

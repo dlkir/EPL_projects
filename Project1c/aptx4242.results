@@ -1,0 +1,1149 @@
+====== Summary ======
+make: *** [PHASE_CS2_1.tst] Error 1
+[       OK ] PhaseA.push_back (0 ms)
+[       OK ] PhaseA.bracket_operator (0 ms)
+[       OK ] PhaseA.pop_back (0 ms)
+[       OK ] PhaseA.constructors (0 ms)
+[       OK ] PhaseA.range_checks (0 ms)
+[       OK ] PhaseA1.PushBackFront (0 ms)
+[       OK ] PhaseA1.CopyConstruct (0 ms)
+[       OK ] PhaseA2.FooCtorDtor (0 ms)
+[       OK ] PhaseA2.ReallocCopy (0 ms)
+[       OK ] PhaseASecret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[       OK ] PhaseA2Secret.<censored>
+[       OK ] PhaseA2Secret.<censored>
+[       OK ] PhaseB.MoveCtor (0 ms)
+[       OK ] PhaseB1.PushBackMove (0 ms)
+[       OK ] PhaseB1.ReallocCopy (0 ms)
+[       OK ] PhaseB0Secret.<censored>
+[       OK ] PhaseB1Secret.<censored>
+[       OK ] PhaseB1Secret.<censored>
+[       OK ] PhaseB2Secret.<censored>
+[       OK ] PhaseB2Secret.<censored>
+[       OK ] PhaseC.direct_init_list (0 ms)
+[       OK ] PhaseC.begin_vector (0 ms)
+[       OK ] PhaseC.RandIteOperations (1 ms)
+[       OK ] PhaseC1.range_for_loop (0 ms)
+[       OK ] PhaseC1.invalid_iterator (0 ms)
+[       OK ] PhaseC1.RandIteConstructor (0 ms)
+[       OK ] PhaseC2.ItrExceptSevere (0 ms)
+[       OK ] PhaseC2.ItrExceptModerate (0 ms)
+[       OK ] PhaseC2.ItrExceptMild (0 ms)
+[       OK ] PhaseC0Secret.<censored>
+[       OK ] PhaseC0Secret.<censored>
+[       OK ] PhaseC0Secret.<censored>
+[  FAILED  ] PhaseC0Secret.<censored>
+[       OK ] PhaseC1Secret.<censored>
+[  FAILED  ] PhaseC1Secret.<censored>
+[       OK ] PhaseC1Secret.<censored>
+[       OK ] PhaseC1Secret.<censored>
+[  FAILED  ] PhaseC1Secret.<censored>
+[  FAILED  ] PhaseC1Secret.<censored>
+[  FAILED  ] PhaseC1Secret.<censored>
+[       OK ] PhaseC2Secret.<censored>
+[       OK ] PhaseC2Secret.<censored>
+[  FAILED  ] PhaseC2Secret.<censored>
+[  FAILED  ] PhaseC2Secret.<censored>
+[  FAILED  ] PhaseC2Secret.<censored>
+
+======= Dump========
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A0_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A0_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A0_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A0_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A0_2 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A0_2.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A0_3 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A0_3.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A0_4 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A0_4.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A1_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A1_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A1_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A1_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A2_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A2_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A2_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A2_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_B0_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_B0_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_B1_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_B1_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_B2_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_B2_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_C0_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_C0_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_C0_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_C0_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_C0_2 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_C0_2.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_C1_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_C1_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_C1_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_C1_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_C1_2 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_C1_2.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_C2_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_C2_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_C2_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_C2_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_C2_2 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_C2_2.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_AS0_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS0_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_AS1_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS1_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_AS1_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS1_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_AS1_2 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS1_2.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_AS1_3 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS1_3.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_AS2_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS2_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_AS2_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS2_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_BS0_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS0_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_BS1_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS1_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_BS1_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS1_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_BS2_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS2_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_BS2_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS2_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS0_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS0_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS0_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS0_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS0_2 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS0_2.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS0_3 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS0_3.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS1_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS1_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS1_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS1_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS1_2 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS1_2.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS1_3 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS1_3.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS1_4 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS1_4.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS1_5 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS1_5.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS1_6 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS1_6.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS2_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS2_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS2_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS2_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS2_2 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS2_2.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS2_3 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS2_3.tst
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h: In instantiation of ‘void epl::vector<T>::vec(I, I, std::input_iterator_tag) [with I = PhaseC_Test::CountingIterator<int>; T = int]’:
+Vector.h:129:20:   required from ‘epl::vector<T>::vector(I, I) [with I = PhaseC_Test::CountingIterator<int>; T = int]’
+Vector_secret_unittests.cpp:646:23:   required from here
+Vector.h:99:27: error: no match for ‘operator+’ (operand types are ‘PhaseC_Test::CountingIterator<int>’ and ‘int’)
+             for(int i=0;(b+i)!=e;i++){
+                           ^
+Vector.h:99:27: note: candidates are:
+In file included from /usr/include/c++/4.8/vector:65:0,
+                 from ../../gtest/include/gtest/gtest.h:56,
+                 from Vector_secret_unittests.cpp:6:
+/usr/include/c++/4.8/bits/stl_bvector.h:379:3: note: std::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_const_iterator& __x)
+   ^
+/usr/include/c++/4.8/bits/stl_bvector.h:379:3: note:   no known conversion for argument 1 from ‘PhaseC_Test::CountingIterator<int>’ to ‘std::ptrdiff_t {aka long int}’
+/usr/include/c++/4.8/bits/stl_bvector.h:293:3: note: std::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_iterator& __x)
+   ^
+/usr/include/c++/4.8/bits/stl_bvector.h:293:3: note:   no known conversion for argument 1 from ‘PhaseC_Test::CountingIterator<int>’ to ‘std::ptrdiff_t {aka long int}’
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2472:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, _CharT)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2472:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:99:27: note:   ‘PhaseC_Test::CountingIterator<int>’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+             for(int i=0;(b+i)!=e;i++){
+                           ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2466:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2466:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:99:27: note:   ‘PhaseC_Test::CountingIterator<int>’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+             for(int i=0;(b+i)!=e;i++){
+                           ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2460:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(_CharT __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2460:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:99:27: note:   mismatched types ‘std::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+             for(int i=0;(b+i)!=e;i++){
+                           ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2454:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2454:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:99:27: note:   mismatched types ‘const _CharT*’ and ‘PhaseC_Test::CountingIterator<int>’
+             for(int i=0;(b+i)!=e;i++){
+                           ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2442:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, std::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2442:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:99:27: note:   ‘PhaseC_Test::CountingIterator<int>’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+             for(int i=0;(b+i)!=e;i++){
+                           ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2436:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, std::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2436:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:99:27: note:   ‘PhaseC_Test::CountingIterator<int>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+             for(int i=0;(b+i)!=e;i++){
+                           ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2430:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2430:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:99:27: note:   ‘PhaseC_Test::CountingIterator<int>’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+             for(int i=0;(b+i)!=e;i++){
+                           ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2418:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2418:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:99:27: note:   ‘PhaseC_Test::CountingIterator<int>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+             for(int i=0;(b+i)!=e;i++){
+                           ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2402:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2402:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:99:27: note:   ‘PhaseC_Test::CountingIterator<int>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+             for(int i=0;(b+i)!=e;i++){
+                           ^
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.tcc:708:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:708:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:99:27: note:   mismatched types ‘const std::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+             for(int i=0;(b+i)!=e;i++){
+                           ^
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.tcc:692:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:692:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:99:27: note:   mismatched types ‘const _CharT*’ and ‘PhaseC_Test::CountingIterator<int>’
+             for(int i=0;(b+i)!=e;i++){
+                           ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2365:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2365:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:99:27: note:   ‘PhaseC_Test::CountingIterator<int>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+             for(int i=0;(b+i)!=e;i++){
+                           ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/string:40,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:1118:5: note: template<class _Iterator> std::move_iterator<_Iterator> std::operator+(typename std::move_iterator<_Iterator>::difference_type, const std::move_iterator<_Iterator>&)
+     operator+(typename move_iterator<_Iterator>::difference_type __n,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1118:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:99:27: note:   mismatched types ‘const std::move_iterator<_Iterator>’ and ‘int’
+             for(int i=0;(b+i)!=e;i++){
+                           ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/string:40,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:333:5: note: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:333:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:99:27: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘int’
+             for(int i=0;(b+i)!=e;i++){
+                           ^
+Vector.h:100:38: error: no match for ‘operator+’ (operand types are ‘PhaseC_Test::CountingIterator<int>’ and ‘int’)
+                 new (storage+i) T(*(b+i));
+                                      ^
+Vector.h:100:38: note: candidates are:
+In file included from /usr/include/c++/4.8/vector:65:0,
+                 from ../../gtest/include/gtest/gtest.h:56,
+                 from Vector_secret_unittests.cpp:6:
+/usr/include/c++/4.8/bits/stl_bvector.h:379:3: note: std::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_const_iterator& __x)
+   ^
+/usr/include/c++/4.8/bits/stl_bvector.h:379:3: note:   no known conversion for argument 1 from ‘PhaseC_Test::CountingIterator<int>’ to ‘std::ptrdiff_t {aka long int}’
+/usr/include/c++/4.8/bits/stl_bvector.h:293:3: note: std::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_iterator& __x)
+   ^
+/usr/include/c++/4.8/bits/stl_bvector.h:293:3: note:   no known conversion for argument 1 from ‘PhaseC_Test::CountingIterator<int>’ to ‘std::ptrdiff_t {aka long int}’
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2472:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, _CharT)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2472:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:100:38: note:   ‘PhaseC_Test::CountingIterator<int>’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+                 new (storage+i) T(*(b+i));
+                                      ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2466:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2466:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:100:38: note:   ‘PhaseC_Test::CountingIterator<int>’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+                 new (storage+i) T(*(b+i));
+                                      ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2460:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(_CharT __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2460:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:100:38: note:   mismatched types ‘std::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+                 new (storage+i) T(*(b+i));
+                                      ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2454:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2454:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:100:38: note:   mismatched types ‘const _CharT*’ and ‘PhaseC_Test::CountingIterator<int>’
+                 new (storage+i) T(*(b+i));
+                                      ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2442:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, std::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2442:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:100:38: note:   ‘PhaseC_Test::CountingIterator<int>’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+                 new (storage+i) T(*(b+i));
+                                      ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2436:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, std::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2436:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:100:38: note:   ‘PhaseC_Test::CountingIterator<int>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+                 new (storage+i) T(*(b+i));
+                                      ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2430:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2430:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:100:38: note:   ‘PhaseC_Test::CountingIterator<int>’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+                 new (storage+i) T(*(b+i));
+                                      ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2418:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2418:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:100:38: note:   ‘PhaseC_Test::CountingIterator<int>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+                 new (storage+i) T(*(b+i));
+                                      ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2402:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2402:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:100:38: note:   ‘PhaseC_Test::CountingIterator<int>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+                 new (storage+i) T(*(b+i));
+                                      ^
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.tcc:708:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:708:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:100:38: note:   mismatched types ‘const std::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+                 new (storage+i) T(*(b+i));
+                                      ^
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.tcc:692:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:692:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:100:38: note:   mismatched types ‘const _CharT*’ and ‘PhaseC_Test::CountingIterator<int>’
+                 new (storage+i) T(*(b+i));
+                                      ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2365:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2365:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:100:38: note:   ‘PhaseC_Test::CountingIterator<int>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+                 new (storage+i) T(*(b+i));
+                                      ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/string:40,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:1118:5: note: template<class _Iterator> std::move_iterator<_Iterator> std::operator+(typename std::move_iterator<_Iterator>::difference_type, const std::move_iterator<_Iterator>&)
+     operator+(typename move_iterator<_Iterator>::difference_type __n,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1118:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:100:38: note:   mismatched types ‘const std::move_iterator<_Iterator>’ and ‘int’
+                 new (storage+i) T(*(b+i));
+                                      ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/string:40,
+                 from /usr/include/c++/4.8/stdexcept:39,
+                 from Vector_secret_unittests.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:333:5: note: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:333:5: note:   template argument deduction/substitution failed:
+In file included from Vector_secret_unittests.cpp:7:0:
+Vector.h:100:38: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘int’
+                 new (storage+i) T(*(b+i));
+                                      ^
+make: *** [PHASE_CS2_1.tst] Error 1
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS2_4 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS2_4.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS2_5 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS2_5.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_PhaseC_unittests.cpp Vector_secret_unittests.cpp -DPHASE_CS2_6 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS2_6.tst
+
+Testing: PHASE_A0_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA
+[ RUN      ] PhaseA.push_back
+[       OK ] PhaseA.push_back (0 ms)
+[----------] 1 test from PhaseA (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A0_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA
+[ RUN      ] PhaseA.bracket_operator
+[       OK ] PhaseA.bracket_operator (0 ms)
+[----------] 1 test from PhaseA (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A0_2.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA
+[ RUN      ] PhaseA.pop_back
+[       OK ] PhaseA.pop_back (0 ms)
+[----------] 1 test from PhaseA (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A0_3.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA
+[ RUN      ] PhaseA.constructors
+[       OK ] PhaseA.constructors (0 ms)
+[----------] 1 test from PhaseA (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A0_4.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA
+[ RUN      ] PhaseA.range_checks
+[       OK ] PhaseA.range_checks (0 ms)
+[----------] 1 test from PhaseA (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A1_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1
+[ RUN      ] PhaseA1.PushBackFront
+[       OK ] PhaseA1.PushBackFront (0 ms)
+[----------] 1 test from PhaseA1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A1_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1
+[ RUN      ] PhaseA1.CopyConstruct
+[       OK ] PhaseA1.CopyConstruct (0 ms)
+[----------] 1 test from PhaseA1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A2_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA2
+[ RUN      ] PhaseA2.FooCtorDtor
+[       OK ] PhaseA2.FooCtorDtor (0 ms)
+[----------] 1 test from PhaseA2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A2_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA2
+[ RUN      ] PhaseA2.ReallocCopy
+[       OK ] PhaseA2.ReallocCopy (0 ms)
+[----------] 1 test from PhaseA2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS0_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseASecret.<censored>
+[ RUN      ] PhaseASecret.<censored>
+[       OK ] PhaseASecret.<censored>
+[----------] 1 test from PhaseASecret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS1_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1Secret.<censored>
+[ RUN      ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[----------] 1 test from PhaseA1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS1_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1Secret.<censored>
+[ RUN      ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[----------] 1 test from PhaseA1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS1_2.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1Secret.<censored>
+[ RUN      ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[----------] 1 test from PhaseA1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS1_3.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1Secret.<censored>
+[ RUN      ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[----------] 1 test from PhaseA1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS2_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA2Secret.<censored>
+[ RUN      ] PhaseA2Secret.<censored>
+[       OK ] PhaseA2Secret.<censored>
+[----------] 1 test from PhaseA2Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS2_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA2Secret.<censored>
+[ RUN      ] PhaseA2Secret.<censored>
+[       OK ] PhaseA2Secret.<censored>
+[----------] 1 test from PhaseA2Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_B0_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB
+[ RUN      ] PhaseB.MoveCtor
+[       OK ] PhaseB.MoveCtor (0 ms)
+[----------] 1 test from PhaseB (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_B1_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB1
+[ RUN      ] PhaseB1.PushBackMove
+[       OK ] PhaseB1.PushBackMove (0 ms)
+[----------] 1 test from PhaseB1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_B2_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB1
+[ RUN      ] PhaseB1.ReallocCopy
+[       OK ] PhaseB1.ReallocCopy (0 ms)
+[----------] 1 test from PhaseB1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_BS0_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB0Secret.<censored>
+[ RUN      ] PhaseB0Secret.<censored>
+[       OK ] PhaseB0Secret.<censored>
+[----------] 1 test from PhaseB0Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_BS1_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB1Secret.<censored>
+[ RUN      ] PhaseB1Secret.<censored>
+[       OK ] PhaseB1Secret.<censored>
+[----------] 1 test from PhaseB1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_BS1_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB1Secret.<censored>
+[ RUN      ] PhaseB1Secret.<censored>
+[       OK ] PhaseB1Secret.<censored>
+[----------] 1 test from PhaseB1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_BS2_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB2Secret.<censored>
+[ RUN      ] PhaseB2Secret.<censored>
+[       OK ] PhaseB2Secret.<censored>
+[----------] 1 test from PhaseB2Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_BS2_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB2Secret.<censored>
+[ RUN      ] PhaseB2Secret.<censored>
+[       OK ] PhaseB2Secret.<censored>
+[----------] 1 test from PhaseB2Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_C0_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC
+[ RUN      ] PhaseC.direct_init_list
+[       OK ] PhaseC.direct_init_list (0 ms)
+[----------] 1 test from PhaseC (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_C0_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC
+[ RUN      ] PhaseC.begin_vector
+lalala iterator
+lalala iterator
+lalala iterator
+_pos=3other._pos3
+[       OK ] PhaseC.begin_vector (0 ms)
+[----------] 1 test from PhaseC (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_C0_2.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC
+[ RUN      ] PhaseC.RandIteOperations
+lalala iterator
+_pos=0other._pos0
+_pos=2other._pos2
+[       OK ] PhaseC.RandIteOperations (1 ms)
+[----------] 1 test from PhaseC (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_C1_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC1
+[ RUN      ] PhaseC1.range_for_loop
+lalala iterator
+lalala iterator
+lalala const_iterator
+lalala const_iterator
+[       OK ] PhaseC1.range_for_loop (0 ms)
+[----------] 1 test from PhaseC1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_C1_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC1
+[ RUN      ] PhaseC1.invalid_iterator
+lalala iterator
+[       OK ] PhaseC1.invalid_iterator (0 ms)
+[----------] 1 test from PhaseC1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_C1_2.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC1
+[ RUN      ] PhaseC1.RandIteConstructor
+lalala iterator
+lalala iterator
+_pos=1other._pos2
+[       OK ] PhaseC1.RandIteConstructor (0 ms)
+[----------] 1 test from PhaseC1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_C2_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC2
+[ RUN      ] PhaseC2.ItrExceptSevere
+lalala iterator
+[       OK ] PhaseC2.ItrExceptSevere (0 ms)
+[----------] 1 test from PhaseC2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_C2_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC2
+[ RUN      ] PhaseC2.ItrExceptModerate
+lalala iterator
+[       OK ] PhaseC2.ItrExceptModerate (0 ms)
+[----------] 1 test from PhaseC2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_C2_2.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC2
+[ RUN      ] PhaseC2.ItrExceptMild
+lalala iterator
+[       OK ] PhaseC2.ItrExceptMild (0 ms)
+[----------] 1 test from PhaseC2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_CS0_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC0Secret.<censored>
+[ RUN      ] PhaseC0Secret.<censored>
+lalala iterator
+lalala iterator
+_pos=1other._pos1
+lalala iterator
+[       OK ] PhaseC0Secret.<censored>
+[----------] 1 test from PhaseC0Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_CS0_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC0Secret.<censored>
+[ RUN      ] PhaseC0Secret.<censored>
+lalala iterator
+[       OK ] PhaseC0Secret.<censored>
+[----------] 1 test from PhaseC0Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_CS0_2.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC0Secret.<censored>
+[ RUN      ] PhaseC0Secret.<censored>
+[       OK ] PhaseC0Secret.<censored>
+[----------] 1 test from PhaseC0Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_CS0_3.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC0Secret.<censored>
+[ RUN      ] PhaseC0Secret.<censored>
+Vector_secret_unittests.cpp:453: Failure
+Value of: endCt - startCt
+  Actual: 4
+Expected: 1
+[  FAILED  ] PhaseC0Secret.<censored>
+[----------] 1 test from PhaseC0Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] PhaseC0Secret.<censored>
+
+ 1 FAILED TEST
+
+Testing: PHASE_CS1_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC1Secret.<censored>
+[ RUN      ] PhaseC1Secret.<censored>
+lalala iterator
+lalala iterator
+lalala iterator
+lalala iterator
+lalala iterator
+lalala iterator
+lalala iterator
+lalala iterator
+lalala iterator
+lalala iterator
+lalala iterator
+lalala iterator
+lalala iterator
+lalala iterator
+[       OK ] PhaseC1Secret.<censored>
+[----------] 1 test from PhaseC1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_CS1_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC1Secret.<censored>
+[ RUN      ] PhaseC1Secret.<censored>
+lalala iterator
+unknown file: Failure
+Unknown C++ exception thrown in the test body.
+[  FAILED  ] PhaseC1Secret.<censored>
+[----------] 1 test from PhaseC1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] PhaseC1Secret.<censored>
+
+ 1 FAILED TEST
+
+Testing: PHASE_CS1_2.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC1Secret.<censored>
+[ RUN      ] PhaseC1Secret.<censored>
+lalala const_iterator
+lalala const_iterator
+[       OK ] PhaseC1Secret.<censored>
+[----------] 1 test from PhaseC1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_CS1_3.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC1Secret.<censored>
+[ RUN      ] PhaseC1Secret.<censored>
+lalala iterator
+[       OK ] PhaseC1Secret.<censored>
+[----------] 1 test from PhaseC1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_CS1_4.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC1Secret.<censored>
+[ RUN      ] PhaseC1Secret.<censored>
+lalala iterator
+Vector_secret_unittests.cpp:550: Failure
+Failed
+[  FAILED  ] PhaseC1Secret.<censored>
+[----------] 1 test from PhaseC1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] PhaseC1Secret.<censored>
+
+ 1 FAILED TEST
+
+Testing: PHASE_CS1_5.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC1Secret.<censored>
+[ RUN      ] PhaseC1Secret.<censored>
+lalala iterator
+Vector_secret_unittests.cpp:570: Failure
+Failed
+[  FAILED  ] PhaseC1Secret.<censored>
+[----------] 1 test from PhaseC1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] PhaseC1Secret.<censored>
+
+ 1 FAILED TEST
+
+Testing: PHASE_CS1_6.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC1Secret.<censored>
+[ RUN      ] PhaseC1Secret.<censored>
+lalala iterator
+Vector_secret_unittests.cpp:589: Failure
+Failed
+[  FAILED  ] PhaseC1Secret.<censored>
+[----------] 1 test from PhaseC1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] PhaseC1Secret.<censored>
+
+ 1 FAILED TEST
+
+Testing: PHASE_CS2_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC2Secret.<censored>
+[ RUN      ] PhaseC2Secret.<censored>
+lalala iterator
+lalala iterator
+[       OK ] PhaseC2Secret.<censored>
+[----------] 1 test from PhaseC2Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_CS2_2.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC2Secret.<censored>
+[ RUN      ] PhaseC2Secret.<censored>
+[       OK ] PhaseC2Secret.<censored>
+[----------] 1 test from PhaseC2Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_CS2_3.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC2Secret.<censored>
+[ RUN      ] PhaseC2Secret.<censored>
+lalala iterator
+lalala iterator
+_pos=0other._pos60
+unknown file: Failure
+Unknown C++ exception thrown in the test body.
+[  FAILED  ] PhaseC2Secret.<censored>
+[----------] 1 test from PhaseC2Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] PhaseC2Secret.<censored>
+
+ 1 FAILED TEST
+
+Testing: PHASE_CS2_4.tst
+[==========] Running 0 tests from 0 test cases.
+[==========] 0 tests from 0 test cases ran. (0 ms total)
+[  PASSED  ] 0 tests.
+
+Testing: PHASE_CS2_5.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC2Secret.<censored>
+[ RUN      ] PhaseC2Secret.<censored>
+lalala iterator
+Vector_secret_unittests.cpp:728: Failure
+Failed
+[  FAILED  ] PhaseC2Secret.<censored>
+[----------] 1 test from PhaseC2Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] PhaseC2Secret.<censored>
+
+ 1 FAILED TEST
+
+Testing: PHASE_CS2_6.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC2Secret.<censored>
+[ RUN      ] PhaseC2Secret.<censored>
+lalala iterator
+Vector_secret_unittests.cpp:748: Failure
+Failed
+[  FAILED  ] PhaseC2Secret.<censored>
+[----------] 1 test from PhaseC2Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] PhaseC2Secret.<censored>
+
+ 1 FAILED TEST
